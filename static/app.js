@@ -1,8 +1,8 @@
 
 // STEP 1: Replace with YOUR Supabase project details
 // Go to your Supabase project settings to find these values
-const API_URL = "https://bkmxdyzteyqwvbxdgqsp.supabase.co"; // Replace with your project URL
-const API_KEY = "sb_publishable_PgKAlPDbJbo6rVQ5-yKP-Q_A_RRQMcM"; // Replace with your public anon key
+const API_URL = "https://aynyzftdiqhgsoccxogv.supabase.co"; // Replace with your project URL
+const API_KEY = "sb_publishable_o63EjtbrXQ2y1liqZ99vUg_-KvI3vw8"; // Replace with your public anon key
 
 // STEP 2: Update table names to match YOUR normalized database
 // Replace these with your actual table names from your 3NF design
