@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- STEP 1: Update the title to match YOUR project -->
+  <title>Supabase Recipe App</title> <!-- Change to your project name -->
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <header>
+    <!-- STEP 2: Update the main heading for YOUR project -->
+    <h1>Recipe App Dashboard</h1> <!-- Change to your project title -->
+  </header>
+
+  <main>
+    <!-- STEP 3: Update the form section for YOUR main entity -->
+    <section>
+      <h2>Add New User</h2> <!-- Change to match your entity (e.g., Add New Student, Add New Product) -->
+      <form id="data-form"> <!-- Keep this ID - it's used in JavaScript -->
+        <!-- STEP 4: Replace these inputs with YOUR table's required fields -->
+        <input type="text" id="name" placeholder="Name"> <!-- Update ID and placeholder for your field -->
+        <input type="email" id="email" placeholder="Email"> <!-- Update ID and placeholder for your field -->
+        <!-- ADD MORE INPUT FIELDS HERE if your table has more columns -->
+        <!-- Examples: <input type="text" id="phone" placeholder="Phone Number"> -->
+        <!--          <input type="date" id="birthdate" placeholder="Birth Date"> -->
+        <button type="submit">Add User</button> <!-- Update button text -->
+      </form>
+    </section>
+
+    <!-- STEP 5: Update this section for YOUR main entity table -->
+    <section aria-labelledby="users-title">
+      <h2 id="users-title">Users</h2> <!-- Change to your entity name (e.g., Students, Products, Customers) -->
+      <table>
+        <thead>
+          <!-- STEP 6: Update table headers to match YOUR table columns -->
+          <tr><th>User ID</th><th>Name</th><th>Email</th><th>Loyalty Points</th></tr> <!-- Replace with your actual column names -->
+        </thead>
+        <tbody id="users-body"></tbody> <!-- Keep this ID - it matches the JavaScript -->
+      </table>
+    </section>
+
+    <!-- STEP 7: Update this section for YOUR second entity table -->
+    <section aria-labelledby="recipes-title">
+      <h2 id="recipes-title">Recipes</h2> <!-- Change to your second entity name -->
+      <table>
+        <thead>
+          <!-- STEP 8: Update headers for your second table columns -->
+          <tr><th>Recipe ID</th><th>Name</th><th>Difficulty</th></tr> <!-- Replace with your actual column names -->
+        </thead>
+        <tbody id="recipes-body"></tbody> <!-- Keep this ID -->
+      </table>
+    </section>
+
+    <!-- STEP 9: Update for YOUR third table OR DELETE this entire section if you don't have a third table -->
+    <section aria-labelledby="ingredients-title">
+      <h2 id="ingredients-title">Ingredients</h2> <!-- Change or DELETE this section -->
+      <table>
+        <thead>
+          <!-- STEP 10: Update headers or DELETE this table -->
+          <tr><th>Ingredient ID</th><th>Ingredient</th></tr> <!-- Replace with your column names or DELETE -->
+        </thead>
+        <tbody id="ingredients-body"></tbody> <!-- Keep this ID if you keep the table -->
+      </table>
+    </section>
+
+    <!-- STEP 11: Update for YOUR junction/relationship table -->
+    <section aria-labelledby="ri-title">
+      <h2 id="ri-title">Recipe Ingredients</h2> <!-- Change to describe your relationship (e.g., Student Courses, Product Orders) -->
+      <table>
+        <thead>
+          <!-- STEP 12: Update headers to show your foreign keys and any additional columns -->
+          <tr><th>Recipe ID</th><th>Ingredient ID</th><th>Quantity</th></tr> <!-- Replace with your actual relationship columns -->
+        </thead>
+        <tbody id="ri-body"></tbody> <!-- Keep this ID -->
+      </table>
+    </section>
+
+    <!-- STEP 13: Update for your second junction table OR DELETE if you don't have one -->
+    <section aria-labelledby="user-recipes-title">
+      <h2 id="user-recipes-title">User Recipes</h2> <!-- Change or DELETE this section -->
+      <table>
+        <thead>
+          <!-- STEP 14: Update headers or DELETE this table -->
+          <tr><th>User ID</th><th>Recipe ID</th><th>Date</th></tr> <!-- Replace or DELETE -->
+        </thead>
+        <tbody id="user-recipes-body"></tbody> <!-- Keep this ID if you keep the table -->
+      </table>
+    </section>
+
+    <!-- STEP 15: ADD MORE TABLE SECTIONS HERE if you have 4th, 5th, or 6th tables -->
+    <!-- Copy the pattern above and create new sections for additional tables -->
+    <!-- Remember to: -->
+    <!-- 1. Give each section a unique aria-labelledby -->
+    <!-- 2. Give each h2 a unique id -->
+    <!-- 3. Give each tbody a unique id that matches your JavaScript -->
+    <!-- 4. Update all headers to match your table columns -->
+
+  </main>
+
+  <script src="static/app.js"></script>
+</body>
+</html>
+
+<!-- FINAL CHECKLIST FOR STUDENTS: -->
+<!-- ✓ Updated page title and main heading -->
+<!-- ✓ Modified form inputs to match your main table columns -->
+<!-- ✓ Updated all table section headings -->
+<!-- ✓ Changed all table headers to match your column names -->
+<!-- ✓ Kept all tbody IDs the same (they match your JavaScript) -->
+<!-- ✓ Deleted unnecessary table sections if you have fewer than 5 tables -->
+<!-- ✓ Added new table sections if you have more than 5 tables -->
+<!-- ✓ Made sure each table section has unique IDs -->
+
+<!-- REMEMBER: The tbody IDs must match what you use in your JavaScript functions! -->
